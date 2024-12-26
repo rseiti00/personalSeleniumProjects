@@ -18,7 +18,7 @@ public class Main {
 		
 		cartPage.clickSignIn("standard_user", "secret_sauce");
 		cartPage.addItemToCart();
-		cartPage.proceedToCheckOut("Renato", "Tsuchida", "01010000");
+		cartPage.proceedToCheckOut("Renato", "Tsuchida", "01010010");
 		
 		DriverSingleton.closedObjectInstance();
 	}
