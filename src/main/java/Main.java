@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import drivers.DriverSingleton;
 import pages.CartPage;
 import pages.HomePage;
+import utils.FrameworkProperties;
 
 public class Main {
 	public static void main(String[] args) {

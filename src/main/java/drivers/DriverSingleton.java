@@ -10,7 +10,7 @@ public class DriverSingleton {
 	private static DriverSingleton instance = null;
 	private static WebDriver driver;
 	
-	private DriverSingleton() {instantiate("Chrome"); }
+	private DriverSingleton() {instantiate ("Chrome"); }
 	
 	public WebDriver instantiate(String strategy) {
 		DriverStrategy driverStrategy = DriverStrategyImplementer.chooseStrategy(strategy);

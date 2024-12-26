@@ -12,12 +12,15 @@ public class FrameworkProperties {
 		try {
 			Properties properties = new Properties();
 			String propFileName = Constants.PROP_FILE_NAME;
+			
 			inputStream = getClass().getClassLoader().getResourceAsStream(propFileName);
+			
 			if (inputStream != null) {
 				properties.load(inputStream);
 			} else {
 				throw new FileNotFoundException(Constants.FILE_NOT_FOUND_EXCEPTION_MESSAGE);
 			}
+			
 			String propertyValue = properties.getProperty(key);
 			this.result = propertyValue;
 		} catch (Exception e) {
